@@ -14,7 +14,7 @@ RNA-seq studies were acquired from an extensive search on the Gene Expression Om
 ### Human Studies
 
 |GSE ID:|SRA ID:|Molecule:|Library Preparation:|Sample Number:|Citation:|
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |GSE84204|SRP078169|Total RNA|Paired-end|15|Alculumbre et al., 2018|
 |GSE89008|SRP091886|Total RNA|Paired-end|52*|Heinz et al., 2018|
 |GSE97672|SRP103821|Total RNA|Paired-end|64*|Heinz et al., 2018|
