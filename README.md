@@ -24,7 +24,7 @@ RNA-seq studies were acquired from an extensive search on the Gene Expression Om
 |GSE156060|SRP277089|Total RNA|Paired-end|24**|This study|
 |GSE156152|SRP277269|Total RNA|Paired-end|12*|This study|
 
-* Not all samples were used, samples derived from knockdown, transfection experiments/ infection experiments under 3 hpi were excluded.
+\* Not all samples were used, samples derived from knockdown, transfection experiments/ infection experiments under 3 hpi were excluded.
 ** Not all samples were used, samples derived from ChIP-seq and mutant virus infections were excluded
 
 ### Mouse Studies
