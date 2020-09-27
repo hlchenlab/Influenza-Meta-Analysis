@@ -11,7 +11,7 @@ The complexity of genomes across many multi-cellular organisms is often highligh
 
 RNA-seq studies were acquired from an extensive search on the Gene Expression Omnibus (GEO) (https://www.ncbi.nlm.nih.gov/geo) database (Search for human studies was undertaken in March 2019 and search for mouse studies was done in November-December 2019). Studies were required to have at least two conditions of infection (i.e. Infected samples with a wildtype influenza viral strain and uninfected samples). In total, 8 human studies and 7 mouse were acquired. 
 
-### Human Studies
+#### Human Studies
 
 |GSE ID:|SRA ID:|Molecule:|Library Preparation:|Sample Number:|Citation:|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
@@ -28,7 +28,7 @@ RNA-seq studies were acquired from an extensive search on the Gene Expression Om
 
 ** Not all samples were used, samples derived from ChIP-seq and mutant virus infections were excluded
 
-### Mouse Studies
+#### Mouse Studies
 
 |GSE ID:|SRA ID:|Molecule:|Library Preparation:|Sample Number:|Citation:|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
@@ -43,6 +43,8 @@ RNA-seq studies were acquired from an extensive search on the Gene Expression Om
 \* Not all samples were used, samples derived from non-lung tissue/transgenic mouse experiments/infection experiments under 1 dpi were excluded.
 
 ### Alignments
+
+All alignments were performed using STAR (v2.6.0c) (Dobin et al., 2013) with default settings to acquire counts using either the human or mouse genomes. THe human genome and annotation were obtained from GENCODE (v29) (https://www.gencodegenes.org/human/release_29.html). Mouse genome and annotation were also acquired from GENCODE (v24) (https://www.gencodegenes.org/mouse/release_M24.html).
 
 ### Differential Expression
 
