@@ -12,7 +12,7 @@ The complexity of genomes across many multi-cellular organisms is often highligh
 RNA-seq studies were acquired from an extensive search on the Gene Expression Omnibus (GEO) (https://www.ncbi.nlm.nih.gov/geo) database (Search for human studies was undertaken in March 2019 and search for mouse studies was done in November-December 2019). Studies were required to have at least two conditions of infection (i.e. Infected samples with a wildtype influenza viral strain and uninfected samples). In total, 8 human studies and 7 mouse were acquired. 
 
 |Human Studies|
-|:------:|
+|:----------------------------------------------------------------------:|
 |GSE ID:|SRA ID:|Molecule:|Library Preparation:|Sample Number:|Citation:|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |GSE84204|SRP078169|Total RNA|Paired-end|15|Alculumbre et al., 2018|
