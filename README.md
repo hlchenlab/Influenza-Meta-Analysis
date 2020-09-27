@@ -24,14 +24,23 @@ RNA-seq studies were acquired from an extensive search on the Gene Expression Om
 |GSE156060|SRP277089|Total RNA|Paired-end|24**|This study|
 |GSE156152|SRP277269|Total RNA|Paired-end|12*|This study|
 
-\* Not all samples were used, samples derived from knockdown, transfection experiments/ infection experiments under 3 hpi were excluded.
+\* Not all samples were used, samples derived from knockdown, transfection experiments/mutant infections/infection experiments under 3 hpi were excluded.
+
 ** Not all samples were used, samples derived from ChIP-seq and mutant virus infections were excluded
 
 ### Mouse Studies
 
 |GSE ID:|SRA ID:|Molecule:|Library Preparation:|Sample Number:|Citation:|
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|GSE117029|SRP153200|Total RNA|Paired-end|25|Sengupta et al., 2019|
+|GSE100522|SRP110570|Total RNA|Paired-end|9|Hu et al., 2018|
+|GSE107488|SRP125820|poly A|Paired-end|14*|Yildiz et al., 2018|
+||SRP061303|poly A|Paired-end|21*||
+||ERP020504|poly A|Single-end|24*|Steed et al., 2017|
+|GSE49933|SRP028868|poly A|Single-end|23|Altboum et al., 2014|
+|GSE52405|SRP033021|Total RNA|Paired-end|78|Josset et al., 2014|
 
+\* Not all samples were used, samples derived from non-lung tissue/transgenic mouse experiments/infection experiments under 1 dpi were excluded.
 
 ### Alignments
 
