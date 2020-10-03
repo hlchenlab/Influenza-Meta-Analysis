@@ -5,7 +5,7 @@ The Influenza virus is one of the most pathogenic viruses in the world and has p
 
 The complexity of genomes across many multi-cellular organisms is often highlighted by how genes function together in highly controlled gene networks. Therefore, components of infected cells, there are identified as targets of influenza interference will ultimately result in an altered expression profile of select genes that will correspond to altered functional activity of these gene networks. Coexpression analysis can be used to identify how genes correlate in their expression profiles and identify gene network modules within diffential expression gene lists. We utilise a two-pronged approach in characterizing gene expression as a result of influenza specific-signalling processes by using meta-analysis and co-expression. The end-result is the identification gene co-expression modules that represent universal functional gene co-expression networks induced directly by influenza infection.
 
-## Contents of this respository
+## Description of contents within this respository
 
 ### Aquisition of studies
 
@@ -42,7 +42,7 @@ RNA-seq studies were acquired from an extensive search on the Gene Expression Om
 
 \* Not all samples were used, samples derived from non-lung tissue/transgenic mouse experiments/infection experiments under 1 dpi were excluded.
 
-### Alignments
+### Alignment
 
 All alignments were performed using STAR (v2.6.0c) (Dobin et al., 2013) with default settings to acquire counts using either the human or mouse genomes. THe human genome and annotation were obtained from GENCODE (v29) (https://www.gencodegenes.org/human/release_29.html). Mouse genome and annotation were also acquired from GENCODE (v24) (https://www.gencodegenes.org/mouse/release_M24.html). Bash script used for alignments are included.
 
@@ -52,17 +52,15 @@ For each study, samples were classed into two categories, infected (samples gene
 
 ### Co-expression and Clustering Analysis
 
-Rscript (Steps 1-4) describes construction of gene-gene co-expression network. In brief, studies had to have at least 10 samples to be included. Gene with significant expression (at least 10 reads, in at least 10 samples for 10 studies) were only included in the final network. Clustering_function.R is the function neccessary to perform hierarchical clustering on genes identified as statistically recurrent from meta-analysis. StudY IDs used in human network construction are included in coexpression studies.csv. Construction of networks followed the basis of works done previously (Lee et al., 2020) by our collaborators at CSHL.
+Rscript (Steps 1-4) describes construction of gene-gene co-expression network. In brief, studies had to have at least 10 samples to be included. Gene with significant expression (at least 10 reads, in at least 10 samples for 10 studies) were only included in the final network. Clustering_function.R is the function neccessary to perform hierarchical clustering on genes identified as statistically recurrent from meta-analysis. Study IDs used in human network construction are included in coexpression studies.csv. Construction of networks followed the basis of works done previously (Lee et al., 2020) by our collaborators at CSHL.
 
 ### Gene Enrichment Analysis
 
-Code and annotation for Gene Ontology (http://geneontology.org/docs/downloads/) is avaiable in this directory.
+Code and annotation for Gene Ontology (http://geneontology.org/docs/downloads/, downloaded January 2020) is avaiable in this directory.
 
 ### Cross-species conservation
 
 Conservation analysis used high confidence orthologues present in both human and mouse. Orthologue ids were downloaded from Ensembl (v100) (http://jan2020.archive.ensembl.org/index.html). An Rdata file is available here. Rscript for riverplots and Venn-diagram plots is also here. 
-
-###
 
 ## References
 
