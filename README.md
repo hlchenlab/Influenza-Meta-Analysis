@@ -48,11 +48,13 @@ All alignments were performed using STAR (v2.6.0c) (Dobin et al., 2013) with def
 
 ### Differential Expression and meta-analysis
 
-For each study, samples were classed into two categories, infected (samples generated from wildtype infections only), or mock infected (uninfected control). All other samples from studies were excluded. For human studies, genes were classified as differentially expressed (DE) if DESeq2 (Love et al., 2014) identified genes with a log2FC >= 1.5 and a p-adjusted value <= 0.05. Mouse studies used less stringent DE thresholds of log2FC >= 1 and p-adjusted <= 0.05. Rscript used for perform differential expression with DESeq2 and the generation of volcano-plots and heatmaps is included. For meta-analysis, genes identified as DE were given a score of 1 ortherwise given a 0 per study. Significant recurrence thresholds of gene differential expression was then calculated across all studies for each species. Differentially expressed genes (DEGs) with a recurrences at or above the calculated threshold where retained for clustering. Rscript for recurrence analysis is included in this repository. Accessory functions for this are available at https://github.com/sarbal/OutDeCo/tree/master/R.
+For each study, samples were classed into two categories, infected (samples generated from wildtype infections only), or mock infected (uninfected control). All other samples from studies were excluded. For human studies, genes were classified as differentially expressed (DE) if DESeq2 (Love et al., 2014) identified genes with a log2FC >= 1.5 and a p-adjusted value <= 0.05. Mouse studies used less stringent DE thresholds of log2FC >= 1 and p-adjusted <= 0.05. Rscript used for perform differential expression with DESeq2 and the generation of volcano-plots and heatmaps is included. For meta-analysis, genes identified as DE were given a score of 1 ortherwise given a 0 per study. Significant recurrence thresholds of gene differential expression was then calculated across all studies for each species. Differentially expressed genes (DEGs) with a recurrences at or above the calculated threshold where retained for clustering. Rscript for recurrence analysis is included in this repository. Accessory functions for this are available at https://github.com/sarbal/OutDeCo/tree/master/R. Human and mouse gene lists are also in this repository.
 
 ### Co-expression and Clustering Analysis
 
+Rscript (Steps 1-4) describes construction of gene-gene co-expression network. In brief, studies had to have at least 10 samples to be included. Gene with significant expression (at least 10 reads, in at least 10 samples for 10 studies) were only included in the final network. Clustering_function.R is the function neccessary to perform hierarchical clustering on genes identified as statistically recurrent from meta-analysis. 
 
+### Gene Enrichment Analysis
 
 ### Cross-species conservation
 
