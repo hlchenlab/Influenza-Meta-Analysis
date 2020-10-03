@@ -52,11 +52,15 @@ For each study, samples were classed into two categories, infected (samples gene
 
 ### Co-expression and Clustering Analysis
 
-Rscript (Steps 1-4) describes construction of gene-gene co-expression network. In brief, studies had to have at least 10 samples to be included. Gene with significant expression (at least 10 reads, in at least 10 samples for 10 studies) were only included in the final network. Clustering_function.R is the function neccessary to perform hierarchical clustering on genes identified as statistically recurrent from meta-analysis. 
+Rscript (Steps 1-4) describes construction of gene-gene co-expression network. In brief, studies had to have at least 10 samples to be included. Gene with significant expression (at least 10 reads, in at least 10 samples for 10 studies) were only included in the final network. Clustering_function.R is the function neccessary to perform hierarchical clustering on genes identified as statistically recurrent from meta-analysis. StudY IDs used in human network construction are included in coexpression studies.csv. Construction of networks followed the basis of works done previously (Lee et al., 2020) by our collaborators at CSHL.
 
 ### Gene Enrichment Analysis
 
+Code and annotation for Gene Ontology (http://geneontology.org/docs/downloads/) is avaiable in this directory.
+
 ### Cross-species conservation
+
+Conservation analysis used high confidence orthologues present in both human and mouse. Orthologue ids were downloaded from Ensembl (v100) (http://jan2020.archive.ensembl.org/index.html). An Rdata file is available here. Rscript for riverplots and Venn-diagram plots is also here. 
 
 ###
 
@@ -75,6 +79,8 @@ HEINZ, S., TEXARI, L., HAYES, M. G. B., URBANOWSKI, M., CHANG, M. W., GIVARKES, 
 HU, J., HU, Z., WANG, X., GU, M., GAO, Z., LIANG, Y., MA, C., LIU, X., HU, S., CHEN, S., PENG, D., JIAO, X. & LIU, X. 2018. Deep sequencing of the mouse lung transcriptome reveals distinct long non-coding RNAs expression associated with the high virulence of H5N1 avian influenza virus in mice. Virulence, 9, 1092-1111.
 
 JOSSET, L., TCHITCHEK, N., GRALINSKI, L. E., FERRIS, M. T., EISFELD, A. J., GREEN, R. R., THOMAS, M. J., TISONCIK-GO, J., SCHROTH, G. P., KAWAOKA, Y., MANUEL DE VILLENA, F. P., BARIC, R. S., HEISE, M. T., PENG, X. & KATZE, M. G. 2014. Annotation of long non-coding RNAs expressed in collaborative cross founder mice in response to respiratory virus infection reveals a new class of interferon-stimulated transcripts. RNA Biol, 11, 875-90.
+
+LEE, J., SHAH, M., BALLOUZ, S., CROW, M. & GILLIS, J. 2020. CoCoCoNet: conserved and comparative co-expression across a diverse set of species. Nucleic Acids Research, 48, W566-W571.
 
 LOVE, M. I., HUBER, W. & ANDERS, S. 2014. Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biology, 15, 550.
 
