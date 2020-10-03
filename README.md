@@ -52,7 +52,7 @@ For each study, samples were classed into two categories, infected (samples gene
 
 ### Co-expression and Clustering Analysis
 
-Rscript (Steps 1-4) describes construction of gene-gene co-expression network. In brief, studies had to have at least 10 samples to be included. Gene with significant expression (at least 10 reads, in at least 10 samples for 10 studies) were only included in the final network. Clustering_function.R is the function neccessary to perform hierarchical clustering on genes identified as statistically recurrent from meta-analysis. Study IDs used in human network construction are included in coexpression studies.csv. Construction of networks followed the basis of works done previously (Lee et al., 2020) by our collaborators at CSHL.
+Rscript (Steps 1-3) describes construction of gene-gene co-expression network. In brief, studies had to have at least 10 samples to be included. Gene with significant expression (at least 10 reads, in at least 10 samples for 10 studies) were only included in the final network. Clustering_function.R is the function neccessary to perform hierarchical clustering on genes identified as statistically recurrent from meta-analysis. Study IDs used in human network construction are included in coexpression studies.csv. Construction of networks followed the basis of works done previously (Lee et al., 2020) by our collaborators at CSHL.
 
 ### Gene Enrichment Analysis
 
