@@ -62,11 +62,30 @@ Code and annotation for Gene Ontology (http://geneontology.org/docs/downloads/, 
 
 Conservation analysis used high confidence orthologues present in both human and mouse. Orthologue ids were downloaded from Ensembl (v100) (http://jan2020.archive.ensembl.org/index.html). An Rdata file is available here. Rscript for riverplots and Venn-diagram plots is also here. 
 
+## Application of methodology to other infectious diseases
+
+This approach is highly applicable and was applied in an analysis across several datasets fderived from SARS-CoV-2 infected datasets.
+
+|GSE ID:|SRA ID:|Molecule:|Library Preparation:|Sample Number:|Citation:|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|GSE150316|SRP261138|Total RNA|Paired-end|88|Desai, et al., 2020|
+|GSE150819|SRP262285|Total RNA|Paired-end|18||
+|GSE147507|SRP253951|Total RNA|Paired-end|110|Daamen, et al., 2021|
+|GSE154104|SRP271115|Total RNA|Paired-end|20|Winkler, et al., 2020|
+|GSE156005|SRP276957|Total RNA|Paired-end|16||
+
+An unpublished datasets was also included.
+
+
 ## References
 
 ALCULUMBRE, S. G., SAINT-ANDRE, V., DI DOMIZIO, J., VARGAS, P., SIRVEN, P., BOST, P., MAURIN, M., MAIURI, P., WERY, M., ROMAN, M. S., SAVEY, L., TOUZOT, M., TERRIER, B., SAADOUN, D., CONRAD, C., GILLIET, M., MORILLON, A. & SOUMELIS, V. 2018. Diversification of human plasmacytoid predendritic cells in response to a single stimulus. Nat Immunol, 19, 63-75.
 
 ALTBOUM, Z., STEUERMAN, Y., DAVID, E., BARNETT-ITZHAKI, Z., VALADARSKY, L., KEREN-SHAUL, H., MENINGHER, T., MENDELSON, E., MANDELBOIM, M., GAT-VIKS, I. & AMIT, I. 2014. Digital cell quantification identifies global immune cell dynamics during influenza infection. Mol Syst Biol, 10, 720.
+
+Daamen AR, Bachali P, Owen KA, Kingsmore KM et al. Comprehensive transcriptomic analysis of COVID-19 blood, lung, and airway. Sci Rep 2021 Mar 29;11(1):7052. PMID: 33782412
+
+Desai N, Neyaz A, Szabolcs A, Shih AR et al. Temporal and spatial heterogeneity of host response to SARS-CoV-2 pulmonary infection. Nat Commun 2020 Dec 9;11(1):6319. PMID: 33298930
 
 DOBIN, A., DAVIS, C. A., SCHLESINGER, F., DRENKOW, J., ZALESKI, C., JHA, S., BATUT, P., CHAISSON, M. & GINGERAS, T. R. 2013. STAR: ultrafast universal RNA-seq aligner. Bioinformatics (Oxford, England), 29, 15-21.
 
@@ -85,6 +104,8 @@ LOVE, M. I., HUBER, W. & ANDERS, S. 2014. Moderated estimation of fold change an
 SENGUPTA, S., TANG, S. Y., DEVINE, J. C., ANDERSON, S. T., NAYAK, S., ZHANG, S. L., VALENZUELA, A., FISHER, D. G., GRANT, G. R., LOPEZ, C. B. & FITZGERALD, G. A. 2019. Circadian control of lung inflammation in influenza infection. Nat Commun, 10, 4107.
 
 STEED, A. L., CHRISTOPHI, G. P., KAIKO, G. E., SUN, L., GOODWIN, V. M., JAIN, U., ESAULOVA, E., ARTYOMOV, M. N., MORALES, D. J., HOLTZMAN, M. J., BOON, A. C. M., LENSCHOW, D. J. & STAPPENBECK, T. S. 2017. The microbial metabolite desaminotyrosine protects from influenza through type I interferon. Science, 357, 498-502.
+
+Winkler ES, Bailey AL, Kafai NM, Nair S et al. SARS-CoV-2 infection of human ACE2-transgenic mice causes severe lung inflammation and impaired function. Nat Immunol 2020 Nov;21(11):1327-1335. PMID: 32839612
 
 YILDIZ, S., MAZEL-SANCHEZ, B., KANDASAMY, M., MANICASSAMY, B. & SCHMOLKE, M. 2018. Influenza A virus infection impacts systemic microbiota dynamics and causes quantitative enteric dysbiosis. Microbiome, 6, 9.
 
