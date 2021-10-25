@@ -104,7 +104,6 @@ f.a = !is.na(m)
 f.t = m[f.a]
 rownames(annot)[f.a] = as.character(attr[f.t,]$ensemblID)
 
-
 #Choose GO Catagory:
 
 filt = voc$V3 == "biological_process"
@@ -113,7 +112,7 @@ filt = voc$V3 == "cellular_component"
 #Or
 filt = voc$V3 == "molecular_function" 
 
-#Extract significant enriched GO groups from enriched conditions
+# Option 1: Extract significant enriched GO groups from enriched conditions
 
 res = list()
 g.up = geneset.up   # This dataframe was made from the last section of the Differential Expression.R code
@@ -133,6 +132,31 @@ n = length(res)
 TFterms = matrix(0,nrow = nrow(voc), ncol = n)
 rownames(TFterms) = voc[,1]
 colnames(TFterms) = colnames(g.up)
+
+# Option 2 for Clusters: (The Clusters dataframe corresponds to the clust dataframe generated from the get_cluster_ids function in the Clustering Analysis folder)
+
+res = list()
+n = length(unique(clusters$unmergedLabels.mod))
+m = match(rownames(annot), clusters$V1)
+f.a = !is.na(m)
+genes = rownames(annot)[f.a]
+resMG = gene_set_enrichment(genes, annot, voc1[filt,])
+filt2 = resMG[,"padj"] < 0.05
+res[[1]] = resMG[filt2,,drop = F]
+
+for (i in 1:n){
+  genes = as.character(clusters[clusters$unmergedLabels.mod ==i,]$V1)
+  m = match (genes, rownames(annot))
+  f.a = !is.na(m)
+  genes = genes[f.a]
+  resMG = gene_set_enrichment(genes, annot, voc1[filt,])
+  filt2 = resMG[,"padj"] < 0.05
+  res[[i+1]] = resMG[filt2,,drop = F]
+}
+n = length(res)
+TFterms = matrix(0,nrow = nrow(voc), ncol = n)
+rownames(TFterms) = voc[,1]
+colnames(TFterms) = c("All",unique(clusters$unmergedLabels.mod))
 
 i =1
 for (i in 1:n) {
