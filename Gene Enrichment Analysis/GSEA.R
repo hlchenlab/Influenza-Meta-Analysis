@@ -140,7 +140,7 @@ n = length(unique(clusters$unmergedLabels.mod))
 m = match(rownames(annot), clusters$V1)
 f.a = !is.na(m)
 genes = rownames(annot)[f.a]
-resMG = gene_set_enrichment(genes, annot, voc1[filt,])
+resMG = gene_set_enrichment(genes, annot, voc[filt,])
 filt2 = resMG[,"padj"] < 0.05
 res[[1]] = resMG[filt2,,drop = F]
 
@@ -149,7 +149,7 @@ for (i in 1:n){
   m = match (genes, rownames(annot))
   f.a = !is.na(m)
   genes = genes[f.a]
-  resMG = gene_set_enrichment(genes, annot, voc1[filt,])
+  resMG = gene_set_enrichment(genes, annot, voc[filt,])
   filt2 = resMG[,"padj"] < 0.05
   res[[i+1]] = resMG[filt2,,drop = F]
 }
